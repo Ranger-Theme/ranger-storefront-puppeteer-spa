@@ -17,16 +17,20 @@
     "prebuild": "pnpm clean",
     "dev": "tsup --watch",
     "build": "tsup",
+    "start": "node dist/index.cjs.js",
     "clean": "rm -rf dist lib",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "only-allow": "^1.2.1"
+    "express": "^4.21.2",
+    "only-allow": "^1.2.1",
+    "puppeteer-core": "^23.10.4"
   },
   "devDependencies": {
     "@ranger-theme/eslint-config": "^0.10.0",
     "@ranger-theme/prettier-config": "^0.2.0",
     "@ranger-theme/ts-config": "^0.1.0",
+    "@types/express": "^5.0.0",
     "@types/node": "^20.10.6",
     "tsup": "^8.0.1"
   },
